@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Details</h2>
+<fieldset>
+    <legend>Fiends</legend>
+    <div >Id Nhà xuất bản : @Model.MaNXB</div>
+     <div >Id tên Nhà xuất bản : @Model.TenNXB</div>
+    <div >Id Địa Chỉ : @Model.DiaChi</div>
+    <div >Id Điện thoại: @Model.DienThoai</div>
+</fieldset>
+@using (Html.BeginForm())
+{
+    <p>
+         @Html.ActionLink("Sửa", "Edit", new { id=Model.MaNXB}) |
+         @Html.ActionLink("Xóa", "Delete", new { id=Model.MaNXB}) |
+         @Html.ActionLink("Back to List","Index") |
+    </p> 
+}

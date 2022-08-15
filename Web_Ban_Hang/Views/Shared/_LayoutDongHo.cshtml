@@ -1,0 +1,397 @@
+﻿<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="~/Content/XuLyTrangChu/Anhchay.css" rel="stylesheet" />
+<!------  ---------->
+<link href="~/Content/XuLyTrangChu/trangchu.css" rel="stylesheet" />
+<!------font  ---------->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<!------ css ---------->
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<link href="~/Content/XuLyTrangChu/QuangCao.css" rel="stylesheet" />
+<!------js ---------->
+@*<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>*@
+<script src="~/Content/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------------index----->
+<link href="~/Content/XuLyTrangChu/index.css" rel="stylesheet" />
+<link href="~/Content/XuLyTrangChu/LoadDH.css" rel="stylesheet" />
+<!------------lienhe--------->
+<link href="~/Content/LienHe/StyleSheet1.css" rel="stylesheet" />
+
+<link href="~/Content/TinTuc.css" rel="stylesheet" />
+<!------------deitals--------->
+<link href="~/Content/details.css" rel="stylesheet" />
+<link href="~/Content/DatHang.css" rel="stylesheet" />
+<link href="~/Content/nutdong.css" rel="stylesheet" />
+<!------------DN--------->
+<link href="~/Content/DK,DN/DangNhap.css" rel="stylesheet" />
+<link href="~/Content/DK,DN/Dangky.css" rel="stylesheet" />
+<link href="~/Content/Gioithiu.css" rel="stylesheet" /> 
+<link href="~/Content/Layout.css" rel="stylesheet" />
+<body>
+ 
+
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/SanPham/Index">
+                @if(Session == null){
+                }
+                else
+                {
+                     <h3 class="my-heading" style="font-family:'iCiel Crocante';stroke:black;stroke-width:35px"> HUFI SHOP </h3>
+                }
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars mfa-white"></span>
+            </button>
+
+            <div id="main">
+                <a href="javascript:void(0)" class="openNav"><span class="fa fa-bars" onclick="openNav()"></span></a>
+            </div>
+
+         
+          
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <ul class="mob-ul">
+             <li class="nav-item"><a class="nav-link" href="/SanPham/Index">Trang Chủ</a></li>
+             <li class="nav-item"><a class="nav-link" href="/LienHe/Index">Liên Hệ</a></li>             
+             <li class="nav-item"><a class="nav-link" href="TrangChu/InDex">Tin Tức</a></li> 
+             <li class="nav-item"><a class="nav-link" href="/NguoiDung/DangNhap">Đăng Nhập</a></li>
+             <li class="nav-item"><a class="nav-link" href="/NguoiDung/DangKy">Đăng ký</a></li>
+             <li class="nav-item"><a class="nav-link" href="GioiThieu/InDex">Giới Thiệu</a></li> 
+             <li class="nav-item"><a class="nav-link" href="Admin/DangNhapad">Đăng Nhập (Admin)</a></li> 
+             
+          </ul>
+        </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <form class="form-inline my-2 my-lg-0 col-md-7">
+                    <input class="myform-control mr-sm-2" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                    <button class="btn btn-light"><i class="fa fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-link">
+                        <a class="btn btn-primary btn-block btn-login" href="/NguoiDung/DangNhap">Đăng Nhập</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="btn btn-primary btn-block btn-register" href="/NguoiDung/DangKy">Đăng Ký</a>
+                    </li>
+
+                </ul>
+             
+                       @*@Html.Action("GioHangPartial", "GioHang")*@
+            </div>
+
+
+
+        </div>
+    </nav>
+
+     
+    
+  @*  <header class="masthead text-white ">*@
+     
+ <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner " >
+      
+    <div class="carousel-item active">
+      <div class="mask flex-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4 col-12 order-md-1 order-2">
+                <h4>NĂNG ĐỘNG</h4>
+             </div>
+            <div class="col-md-4 col-12 order-md-2 order-1" style="margin-top:70px" ><img src="~/HinhAnhSP/moon-knight-episode-1-car-chase-scene-steven-grant.jpg" class="mx-auto" alt="slide"></div>
+          </div>
+            <div class="col-md-4 col-12 order-md-1 order-2">
+                <h4>NGHỆ THUẬT</h4>
+             </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="mask flex-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-7 col-12 order-md-1 order-2" >
+                <h4>CHUYÊN NGHIỆP</h4>
+               </div>
+            <div class="col-md-5 col-12 order-md-2 order-1" style="margin-top:70px"><img src="~/HinhAnhSP/09.PNG" class="mx-auto" alt="slide"></div>
+          </div>
+       </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="mask flex-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-7 col-12 order-md-1 order-2" style="margin-top:70px">
+                <img src="~/HinhAnhSP/03.PNG" class="mx-auto" alt="slide">
+              </div>
+            <div class="col-md-5 col-12 order-md-2 order-1" ></div>
+              <h4>ĐA DẠNG</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+ <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active"  href="\SanPham\Index" style="color:yellow;font-size:inherit">  Trang Chủ</a>
+            <a class="nav-link" href="\TrangChu\Index" style="color:yellow">Tin Tức</a>
+      <a class="nav-link" href="\LienHe\Index" style="color:yellow">Liên Hệ</a>
+     <a class="nav-link" href="\GioiThieu\Index" style="color:yellow">Giới thiệu</a>
+     <a class="nav-link" href="\Admin\Index" style="color:yellow">Đăng Nhập (Admin)</a>
+          </nav>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+         
+ <!------con  ---------->
+    <br/>
+ 
+
+    
+<div class="container">
+    <div class="row">
+       
+        <div class="col-12 col-sm-3">
+            
+            @Html.Action("Hang","SanPham")
+            <div class="card bg-light mb-3">
+                <div class="card-header bg-success text-white text-uppercase">SẢN PHẨM NỔI BẬT</div>
+                <div class="card-body wow bounceInUp">
+                    <img class="img-fluid wow fadeInUp" src="~/HinhAnhSP/moon-knight-episode-1-car-chase-scene-steven-grant.jpg" />
+                    <h5 class="card-title">Jordan One</h5>
+                    <p class="card-text wow bounceInUp">Là một trong loại giày mới nhất của Shop, có vẻ đẹp cuốn hút thời trang mang đến cho người dùng cảm giác êm ái</p>
+                    <p class="bloc_left_price">7.000.000 VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row" id="ads">
+
+    @RenderBody()
+
+                  </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <!------/con  ---------->
+
+  
+
+
+    <section class="testimonials text-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto wow fadeInUp">
+                    <h3 class="text-center font-weight-bold">Bài Viết<span class="bg-main"> Gửi </span>Khách hàng</h3>
+                    <p class=" text-center">Shop thời trang siêu VIP</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-6 mt-4 wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="big-img-3">
+                        <img src="~/HinhAnh/h6.jpg" class="img-fluid" width="450px" height="450px">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-6 mt-4">
+                    <div class="my-right-text wow fadeInUp">
+
+                        <p class="text-justify font-italic" style="color:white">Shop chuyên quần áo giày dép cao cấp, có những phụ kiện kèm theo cực chất, giá cả phải chăng. 
+Với những thương hiệu hàng đầu thế gioi mang đến cho bạn một phong cách hiện đại, thích hợp cho sự kiện lớn.
+Mang đến cho bạn một trải nghiệm tuyệt vời, cảm giác tự tin. 
+
+Đảm bảo chất lượng, bao Real, bao test.
+
+
+Hoàn tiền 100% nếu lổi hàng FAKE.
+
+Tư vấn và đặt hàng: 098.668.1189
+
+Giao hàng tận nơi, thanh toán trực tiếp khi nhận hàng
+
+Miễn phí vận chuyển
+
+ </p>
+
+                        <a href="#" class="link-color">HUFI - SHOP</a>
+                        <p class="text-muted">Shop thời trang</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-6 text-center text-lg-left my-auto  wow zoomIn">
+                     <ul class="list-inline mb-2">
+                        <li class="list-inline-item">
+                            <a href="\SanPham\Index">Trang Chủ</a>
+                        </li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item">
+                            <a href="\TrangChu\Index">Tin Tức</a>
+                        </li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item">
+                            <a href="\LienHe\Index">Liên Hệ</a>
+                        </li>
+                          <li class="list-inline-item">
+                            <a href="\GioiThieu\Index">Giới Thiệu</a>
+                        </li>
+                         <li class="list-inline-item">
+                            <a href="\Admin\Index">Đăng Nhập (Admin)</a>
+                        </li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© HUFI - SHOP. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right my-auto  wow zoomIn">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fa fa-facebook fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fa fa-twitter fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fa fa-instagram fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+     <script>
+         new WOW().init();
+              </script>
+    <script>
+        $(window).scroll(function () {
+
+
+            var topWindow = $(window).scrollTop();
+            var topWindow = topWindow * 1.5;
+            var windowHeight = $(window).height();
+            var position = topWindow / windowHeight;
+            position = 1 - position;
+
+            $('#bottom').css('opacity', position);
+
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.display = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginRight = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+
+        $(window).on("scroll", function () {
+            if ($(this).scrollTop() > 10) {
+                $("nav.navbar").addClass("mybg-dark");
+                $("nav.navbar").addClass("navbar-shrink");
+
+
+            } else {
+                $("nav.navbar").removeClass("mybg-dark");
+                $("nav.navbar").removeClass("navbar-shrink");
+
+            }
+
+
+
+        });
+
+        $(function () {
+            $('#bottom').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);
+                        return false;
+                    }
+                }
+            });
+        });
+
+      
+</script>
+    <script>
+        $('#myCarousel').carousel({
+            interval: 3000,
+        });
+        </script>
+<script>
+    $(document).ready(function () {
+        $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+        });
+    });
+</script>
+
+    <!-------show quang cáo--------->
+         <script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+             </script>
+</body>

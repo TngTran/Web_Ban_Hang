@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 10.25" name="QuanLyBanDongHoModel">
+  <DataContextMoniker Name="/QuanLyBanDongHoModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5836a649-9f6d-43d3-b1b2-e4e4eb2ef24a" absoluteBounds="6.25, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/CHITIETDONHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffe38fd1-f411-411a-bad4-21fe3e973a9f" absoluteBounds="6.265, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5568ed14-2ade-4f12-8bcf-9265d69a10e3" absoluteBounds="3.5, 4.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/TINTUC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4bd87f83-1082-41c5-a722-a5dba9b58058" absoluteBounds="3.515, 5.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a2f8495-b345-4fc2-84bd-641fd7f24962" absoluteBounds="8.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/DangNhapAmin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2b85211-d9b6-4bdb-91fb-0f4709c5d247" absoluteBounds="8.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="641535ab-cebf-481d-abe9-39eeba476e71" absoluteBounds="9.5, 5.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/DONHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="535ddafd-76b3-4543-bbb6-41a269f1055e" absoluteBounds="9.515, 5.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="71bd89ef-2bc0-4c5b-bef3-1bc396471ffb" absoluteBounds="0.75, 1.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/HANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d386f87f-b849-41e1-a9ec-747d2e5750b9" absoluteBounds="0.765, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f552d7e-75fd-4c61-9892-10093dfce3e1" absoluteBounds="6.75, 5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21517147-2455-4b35-9ed8-d64a6cb1594f" absoluteBounds="6.765, 5.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5284a206-ebe7-403a-acb3-e2d35d406973" absoluteBounds="3.5, 1, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/SANPHAM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c00b040d-7911-4fd8-a863-a22b519566e2" absoluteBounds="3.515, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b1c755a-1548-46b8-a78e-bd3692bdca82" absoluteBounds="0.75, 8.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/TAIKHOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07190adb-2b2e-4041-ac69-7c26a044f57e" absoluteBounds="0.765, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed988e3a-99cd-48c8-837c-3e60a04ee7d8" absoluteBounds="0.75, 5.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/QuanLyBanDongHoModelDataContext/THELOAITIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6902a027-0244-4233-8216-3f7ca29ce90e" absoluteBounds="0.765, 5.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 6.20274983723958); (9.5 : 6.20274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyBanDongHoModelDataContext/KHACHHANG/KHACHHANG_DONHANG" />
+      <nodes>
+        <classShapeMoniker Id="9f552d7e-75fd-4c61-9892-10093dfce3e1" />
+        <classShapeMoniker Id="641535ab-cebf-481d-abe9-39eeba476e71" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.28929768880208); (6.25 : 2.28929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyBanDongHoModelDataContext/SANPHAM/SANPHAM_CHITIETDONHANG" />
+      <nodes>
+        <classShapeMoniker Id="5284a206-ebe7-403a-acb3-e2d35d406973" />
+        <classShapeMoniker Id="5836a649-9f6d-43d3-b1b2-e4e4eb2ef24a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.34699625651042); (3.5 : 2.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyBanDongHoModelDataContext/HANG/HANG_SANPHAM" />
+      <nodes>
+        <classShapeMoniker Id="71bd89ef-2bc0-4c5b-bef3-1bc396471ffb" />
+        <classShapeMoniker Id="5284a206-ebe7-403a-acb3-e2d35d406973" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.97199625651042); (3.5 : 5.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyBanDongHoModelDataContext/THELOAITIN/THELOAITIN_TINTUC" />
+      <nodes>
+        <classShapeMoniker Id="ed988e3a-99cd-48c8-837c-3e60a04ee7d8" />
+        <classShapeMoniker Id="5568ed14-2ade-4f12-8bcf-9265d69a10e3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

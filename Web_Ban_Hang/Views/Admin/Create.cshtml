@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Admin/shared/_layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+ <div class="container wow slideInLeft">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Thêm Sản Phẩm</h5>
+              <hr />
+            <form  class="form-signin">
+
+              
+               <div class="form-label-group">
+                <input name="TenDH" type="text" id="inputNgaySinh1" class="form-control" placeholder="Tên Sản Phẩm" required autofocus>
+                <br/>
+                   
+                   <div class="form-label-group">
+                <input name="Gia" type="text" id="inputNgaySinh11" class="form-control" placeholder="Giá Bán" required autofocus>
+                <br/>
+                        <div class="form-label-group">
+                <input name="MoTa" type="text" id="inputNgaySinh12" class="form-control" placeholder="Mô Tả" required autofocus>
+                <br/>
+                             <div class="form-label-group">
+                <input name="Ngay" type="date" id="inputNgaySinh13" class="form-control" placeholder="Ngày Cập Nhật" required autofocus>
+                <br/>
+                                  <div class="form-label-group">
+                <input name="Anh" type="text" id="inputNgaySinh14" class="form-control" placeholder="Ảnh Bìa" required autofocus>
+                <br/>
+                                       <div class="form-label-group">
+                <input name="Sl" type="text" id="inputNgaySinh15" class="form-control" placeholder="Số Lượng Tồn" required autofocus>
+                <br/>
+                                            <div class="form-label-group">
+                <input name="Ma" type="text" id="inputNgaySinh16" class="form-control" placeholder="Mã Hàng" required autofocus>
+                <br/>
+                                                 <div class="form-label-group">
+                <input name="XX" type="text" id="inputNgaySinh17" class="form-control" placeholder="Xuất Xứ" required autofocus>
+                <br/>
+                    
+              </div>
+
+               <div class="form-label-group">
+                <input name="Moi" type="text" id="inputNgaySinh" placeholder="Mới" class="form-control"  required autofocus>
+                    <br/>
+                 
+              </div>
+                <div>
+            
+                    </div>
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Thêm Mới</button>
+              <hr class="my-4">
+              <h2 style="color:red; text-align:center">@ViewBag.Thongbao </h2>
+              
+
+            </form>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+<div>
+    @Html.ActionLink("Back To List","Index");
+</div>

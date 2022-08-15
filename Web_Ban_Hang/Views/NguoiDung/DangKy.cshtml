@@ -1,0 +1,66 @@
+﻿@using(Html.BeginForm())
+{
+ <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Đăng Ký</h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input name="HotenKH" type="text" id="inputUserame" class="form-control" placeholder="HỌ TÊN" required autofocus>
+                <label for="inputUserame">Họ Tên</label>
+              </div>
+
+           <div class="form-label-group">
+                <input name="TenDN" type="text" id="inputUd" class="form-control" placeholder="Tài Khoản" required autofocus>
+                <label for="inputUserame">Tài Khoản</label>
+              </div>
+              
+                <div class="form-label-group">
+                <input name="MatKhau" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Password</label>
+              </div>
+              <hr>
+                <div class="form-label-group">
+                <input name="Diachi" type="text" id="inputDiachi" class="form-control" placeholder="Địa Chỉ" required autofocus>
+                <label for="inputUserame">Địa Chỉ</label>
+              </div>
+               <div class="form-label-group">
+                <input name="GioiTinh" type="text" id="inputGioiTinh" class="form-control" placeholder="Giới Tính" required autofocus>
+                <label for="inputUserame">Giới Tính</label>
+              </div>
+
+                 <div class="form-label-group">
+                <input name="Email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">Email address</label>
+              </div>
+
+                <div class="form-label-group">
+                <input name="Dienthoai" type="Text" id="inputphone" class="form-control" placeholder="Số điện thoại" required autofocus>
+                <label for="inputUserame">Số điện thoại</label>
+              </div>
+               
+                 <div class="form-label-group">
+                <input name="NgaySinh" type="date" id="inputNgaySinh" class="form-control"  required autofocus>
+                <label for="inputUserame">Ngày Sinh</label>
+              </div>
+             
+              
+            
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Đăng ký</button>
+              <a class="d-block text-center mt-2 small" href="/NguoiDung/DangNhap">Đăng Nhập</a>
+              
+              <hr class="my-4">
+                      <h2 style="color:red; text-align:center">@ViewBag.Thongbao </h2>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}

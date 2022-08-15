@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Admin/shared/_layout.cshtml";
+}
+
+<div class="container wow slideInLeft">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Thông Tin </h5>
+              <hr />
+            <form  class="form-signin">
+
+              
+                <table>
+                <tr style="height:40px">
+            <td>Tên DH:</td>
+            <td style="font-weight:bold">@Model.TenSP</td>
+        </tr>
+        <tr style="height:40px">
+            <td>Giá:</td>
+            <td style="font-weight:bold">@Model.GiaBan</td>
+        </tr>
+        <tr style="height:40px">
+            <td>Mô tả:</td>
+            <td style="font-weight:bold">@Model.MoTa</td>
+        </tr>
+                    <tr style="height:40px">
+            <td>Ảnh Bìa:</td>
+            <td style="font-weight:bold">@Model.AnhBia</td>
+        </tr>
+                    <tr style="height:40px">
+            <td>Số lượng tồn:</td>
+            <td style="font-weight:bold">@Model.SoLuongTon</td>
+        </tr>
+                    <tr style="height:40px">
+            <td>Mã hãng:</td>
+            <td style="font-weight:bold">@Model.MaHA</td>
+        </tr>
+                    <tr style="height:40px">
+            <td>Xuất Xứ:</td>
+            <td style="font-weight:bold">@Model.XuatXu</td>
+        </tr>
+                    <tr style="height:40px">
+            <td>Mới:</td>
+            <td style="font-weight:bold">@Model.Moi</td>
+        </tr>
+                     </table>
+
+   @using (Html.BeginForm()) 
+   {        
+        
+              <button class="btn btn-lg btn-primary btn-block text-uppercase"  value="Delete" type="submit">Delete</button>
+           
+    
+        @Html.ActionLink("Back to List", "Index")
+   }
+
+            </form>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

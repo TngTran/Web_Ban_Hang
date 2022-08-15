@@ -1,0 +1,54 @@
+﻿@model IEnumerable<QuanLyThoiTrang.Models.SANPHAM>
+@{
+    ViewBag.Title = "SPTheoHang";
+    Layout = "~/Views/Shared/_LayoutDongHo.cshtml";
+}
+
+<div class="container wow bounceInUp">
+ <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                   <h3 class="my-heading " style="color:red"> Sản Phẩm <span class="bg-main"></span></h3>
+                  
+                </ol>
+            </nav>
+        </div>
+      </div>
+    </div>
+<br/>
+                 @foreach(var DongHo in Model)
+                {
+                         <div class="col-md-4 wow slideInLeft">
+                           <div class="card rounded" style="margin-top:20px">
+            <div class="card-image">
+                     <div class="box1 wow bounceInUp" >
+                <img class="img-fluid " alt="@DongHo.TenSP" src="~/HinhAnhSP/@DongHo.AnhBia"   style="width:245px;height:244px" />
+                          <h3 class="title">@DongHo.TenSP</h3>
+                         <ul class="icon">
+                          @*  <li><a href="#"><i class="fa fa-search"></i></a></li>*@
+                         <li>  <a  href="@Url.Action("Details", "SanPham", new { id = DongHo.MaSP })"><i class="fa fa-search"></i></a></li>
+                        </ul>
+            </div>
+                  
+            <div class="card-image-overlay m-auto" style="text-align:center">
+          
+              
+            </div>
+            <div class="card-body text-center">
+               
+                 <a class="ad-btn"  href="@Url.Action("ThemGioHang", "GioHang", new { @iMaDH = DongHo.MaSP, @strURL = Request.Url.ToString() })">Thêm Vào Giỏ</a>
+            </div>
+                
+        </div>  
+                               </div>
+                      </div>
+  
+                 }
+  
+                    
+                   
+           
+            
+          
+

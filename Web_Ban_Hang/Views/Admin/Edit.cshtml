@@ -1,0 +1,110 @@
+﻿@model QuanLyThoiTrang.Models.SANPHAM
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Admin/shared/_layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+ <div class="container wow slideInLeft">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Thêm Sản Phẩm</h5>
+              <hr />
+            <form  class="form-signin">
+
+              
+              <fieldset>
+        <legend>SANPHAM</legend>
+
+        @Html.HiddenFor(model => model.MaSP)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TenSP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TenSP)
+            @Html.ValidationMessageFor(model => model.TenSP)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.GiaBan)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.GiaBan)
+            @Html.ValidationMessageFor(model => model.GiaBan)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MoTa)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MoTa)
+            @Html.ValidationMessageFor(model => model.MoTa)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NgayCapNhat)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NgayCapNhat)
+            @Html.ValidationMessageFor(model => model.NgayCapNhat)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AnhBia)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AnhBia)
+            @Html.ValidationMessageFor(model => model.AnhBia)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SoLuongTon)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SoLuongTon)
+            @Html.ValidationMessageFor(model => model.SoLuongTon)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MaHA)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MaHA)
+            @Html.ValidationMessageFor(model => model.MaHA)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.XuatXu)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.XuatXu)
+            @Html.ValidationMessageFor(model => model.XuatXu)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Moi)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Moi)
+            @Html.ValidationMessageFor(model => model.Moi)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+              
+
+            </form>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}

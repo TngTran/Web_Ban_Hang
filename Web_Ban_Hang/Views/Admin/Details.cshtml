@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Admin/shared/_layout.cshtml";
+}
+
+
+<div class="example-0 wow bounceInUp">
+Chi Tiết Sản Phẩm
+
+</div>
+
+<div class="container wow bounceInUp">
+    <br>
+<div class="card border-0">
+	<div class="row">
+		<aside class="col-sm-4">
+<article class="gallery-wrap"> 
+<div class="img-big-wrap">
+  <div> <a href="#"><img src="~/HinhAnhSP/@Model.AnhBia" ></a></div>
+</div>
+
+</article>
+		</aside>
+		<aside class="col-sm-5">
+<article class="card-body m-0 pt-0 pl-5">
+	<h3 class="title text-uppercase">Tên Sản Phẩm :@Model.TenSP</h3>
+
+<div class="mb-3 mt-3"> 
+		<span class="h7 text-success">Ngày Cập Nhật:@Model.NgayCapNhat</span>
+</div>						
+<div class="mb-3 mt-3"> 
+    <span class="price-title">Giá :</span>
+		<span class="price color-price-waanbii">@Model.GiaBan<sup>VND</sup></span>
+</div>
+<dl class="item-property">
+  <dt>Mô Tả</dt>
+  <dd><p>@Model.MoTa</p></dd>
+</dl>
+<dl class="param param-feature">
+ 
+  <dd>Xuất Xứ :@Model.XuatXu</dd>
+</dl>
+    			<dl class="item-property">
+  <dt>Số Lượng Tồn:</dt>
+  <dd><p>@Model.SoLuongTon</p></dd>
+</dl>
+</article>
+		</aside>
+		<aside class="col-sm-3">
+		    	<div class="row">
+
+	</div>
+
+	<div class="row mb-4 mt-4">
+	<h3 class="bg-main">Shop <span class="bg-main"></span></h3>
+		    </div>
+		</aside>
+	</div>
+ 
+
+</div>
+
+
+    <a href="\Admin\Index" class="btn btn-warning wow slideInLeft"><i class="fa fa-angle-left"></i> Quay lại </a>
+
+</div>

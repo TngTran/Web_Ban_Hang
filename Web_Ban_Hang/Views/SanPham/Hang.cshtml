@@ -1,0 +1,16 @@
+﻿@model IEnumerable<QuanLyThoiTrang.Models.HANG>
+@{
+    ViewBag.Title = "Hang";
+  
+}
+
+
+<div class="card bg-light mb-3 wow slideInLeft">
+                <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> DANH MUC SAN PHAM</div>
+                <ul class="list-group category_block">
+                    @foreach(var item in Model)
+{
+                    <li class="list-group-item wow bounceInUp"><a href="@Url.Action("SPTheoHang", "SanPham", new { id=item.MaHA})">@item.TenHA</a></li>
+                    }
+                </ul>
+            </div>
